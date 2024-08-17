@@ -1,4 +1,4 @@
-from relationship_app.models import Author, Book, Library, Librarian
+from .models import Author, Book, Library, Librarian
 books = Book.objects.all()
 for book in books:
     if book.author.name == "Ahmed Amin":
